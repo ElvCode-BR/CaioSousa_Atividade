@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <title>Contato</title>
+</head>
+
+
+<body class="body-azul">
+    <header>
+        <!-- Menu Superior do Site -->
+        <div>
+          <div class="topnav-header-3">
+            <a class="active" href="index.html"><img src="IMG/xicons8-página-inicial-100.png"><span
+                class="link-text">Sobre Mim</span></a>
+            <a href="educacional.html"><img src="IMG/xicons8-literatura-100.png"><span
+                class="link-text">Educacional</span></a>
+            <a href="portifolio.html"><img src="IMG/xicons8-adicionar-arquivo-100.png"><span
+                class="link-text">Portifólio</span></a>
+            <a href="contato.html"><img src="IMG/xicons8-abrir-pasta-100.png"><span
+                class="link-text">Contato</span></a>
+          </div>
+        </div>
+      </header>
+    <!-- Formulário de contato realizado com o uso de divs para organização em blocos -->
+    <div class="body-form">
+
+        <div class="container-form">
+            <div class="form-image">
+                <img src="IMG/cadastrar.svg" />
+            </div>
+            <!-- Todo o formulário também utiliza-se de classes do CSS para estilização -->
+            <div class="form-cadastro">
+                <form method="post" name="form1">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Contato</h1>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box-big">
+                            <label for="nomeContato">Nome Completo</label>
+                            <input id="nomeContato" type="text" name="nomeContato" required="">
+                        </div>
+
+                        <div class="input-box-tiny">
+                            <label for="telContato">Telefone</label>
+                            <input type="text" name="telContato" id="telContato" maxlength="14" required="">
+                        </div>
+
+
+                        <div class="input-box-medium">
+                            <label for="emailContato">E-mail</label>
+                            <input id="emailContato" type="email" name="emailContato" required="">
+                        </div>
+
+
+                        <label for="infoContato">&nbsp;&nbsp;Informe o assunto sobre o qual deseja falar:</label>
+                        <textarea name="infoContato" value="" style="padding: 10px;"></textarea><br>
+
+                    </div>
+                    <!-- Botão para submeter as informações do formulário -->
+                    <div class="submit-button">
+                        <button type="submit" id="enviarContato">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
